@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:ital,wght@0,400;1,900&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -57,6 +58,10 @@ img {
   display: block; }
 
 /* start */
+body {
+  font-family: 'Noto Sans TC' , 'Roboto' , sans-serif;
+  font-weight: 400; }
+
 .container {
   max-width: 1110px;
   display: -webkit-box;
@@ -81,7 +86,8 @@ h2 {
   padding-top: 60px;
   padding-bottom: 40px;
   text-align: center;
-  color: #650300; }
+  color: #650300;
+  font-weight: 700; }
   @media (max-width: 992px) {
     h2 {
       padding-bottom: 32px;
@@ -179,21 +185,22 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto; }
-  .bannermain .text {
+  .bannermain .bannertext {
     font-size: 36px;
     text-align: right;
     color: #650300; }
-    .bannermain .text p {
-      font-size: 64px; }
+    .bannermain .bannertext p {
+      font-size: 64px;
+      font-weight: 700; }
   @media (max-width: 992px) {
     .bannermain {
       margin: 0 38.5px; } }
   @media (max-width: 767px) {
     .bannermain {
       margin: 0 15px; }
-      .bannermain .text {
+      .bannermain .bannertext {
         font-size: 16px; }
-        .bannermain .text p {
+        .bannermain .bannertext p {
           font-size: 32px; } }
 
 .main {
@@ -221,7 +228,8 @@ h2 {
     text-align: center;
     margin-top: 24px;
     margin-bottom: 8px;
-    font-size: 24px; }
+    font-size: 24px;
+    font-weight: 700; }
   .maincontent p {
     max-width: 255px;
     display: block;
@@ -288,7 +296,10 @@ h2 {
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 900; }
   .classtext img {
     height: 44px;
     margin-right: 10px; }
@@ -316,7 +327,9 @@ h2 {
     padding-bottom: 80px; }
     .design .container .designimg {
       position: relative;
-      width: 49%; }
+      width: 49%;
+      font-family: 'Roboto';
+      font-weight: 700; }
       .design .container .designimg p {
         color: #AA0601;
         font-size: 72px;
@@ -373,12 +386,14 @@ h2 {
 
 .cardtext {
   position: relative;
-  height: 172px;
+  height: 204px;
   font-size: 16px;
+  line-height: 1.5;
   padding: 16px; }
   .cardtext h4 {
     font-size: 14px;
-    margin-bottom: 8px; }
+    margin-bottom: 8px;
+    font-weight: 500; }
 
 .cardtime {
   position: absolute;
@@ -528,6 +543,7 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
   font-size: 36px;
+  font-family: 'Roboto';
   margin-bottom: 16px; }
   .footerdata .footericon {
     width: 48px;
@@ -563,6 +579,8 @@ h2 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-size: 16px; }
+  .footerfoot p {
+    font-family: 'Roboto'; }
   .footerfoot ul {
     display: -webkit-box;
     display: -ms-flexbox;
