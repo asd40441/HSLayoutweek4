@@ -3,7 +3,7 @@
     padding-top: 60px;
     padding-bottom: 40px;
     text-align: center;
-    color: #650300;
+    color: $brown-red;
     font-weight: 700;
     @include pad(){
         padding-bottom: 32px;
@@ -40,7 +40,7 @@
     .bannertext {
         font-size: 36px;
         text-align: right;
-        color: #650300;
+        color: $brown-red;
 
         p {
             font-size: 64px;
@@ -48,7 +48,7 @@
         }
     }
 
-    @media (max-width: 992px) {
+    @include pad() {
         margin: 0 38.5px;
     }
 
@@ -74,7 +74,7 @@
         flex-wrap: nowrap;
     }
 
-    @media (max-width: 992px) {
+    @include pad() {
         padding-bottom: 16px;
 
         .container {
@@ -88,7 +88,7 @@
 }
 
 .maincontent {
-    color: #650300;
+    color: $brown-red;
 
     img {
         margin: 0 auto;
@@ -109,10 +109,9 @@
         margin: 0 auto;
         text-align: left;
         font-size: 16px;
-        line-height: 1.5;
     }
 
-    @media (max-width: 992px) {
+    @include pad() {
         width: 50%;
         margin-bottom: 40px;
     }
@@ -126,7 +125,7 @@
 
 .class {
     padding-bottom: 32px;
-    color: #AA0601;
+    color: $medium-red;
 
     .container {
         justify-content: flex-start;
@@ -149,10 +148,9 @@
 
     p {
         font-size: 48px;
-        line-height: 1.5;
     }
 
-    @media (max-width: 992px) {
+    @include pad() {
         padding-bottom: 48px;
 
         .container {
@@ -198,17 +196,14 @@
         margin-right: 10px;
     }
 
-    @media (max-width: 992px) {
+    @include pad() {
         img {
             height: 37px;
         }
     }
 
     @include mobile() {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%)
+        @include position-center;
     }
 }
 
@@ -233,16 +228,13 @@
             font-weight: 700;
 
             p {
-                color: #AA0601;
+                color: $medium-red;
                 font-size: 72px;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%)
+                @include position-center;
             }
         }
 
-        @media (max-width: 992px) {
+        @include pad() {
             padding-bottom: 56px;
 
             .designimg {
@@ -273,7 +265,7 @@
         flex-wrap: nowrap;
     }
 
-    @media (max-width: 992px) {
+    @include pad() {
         padding-bottom: 24px;
 
         .container {
@@ -289,7 +281,7 @@
     border-radius: 4px;
     width: 25%;
 
-    @media (max-width: 992px) {
+    @include pad() {
         width: 48%;
         margin-bottom: 32px;
 
@@ -308,7 +300,6 @@
     position: relative;
     height: 204px;
     font-size: 16px;
-    line-height: 1.5;
     padding: 16px;
 
     h4 {
@@ -352,7 +343,7 @@
         }
     }
 
-    @media (max-width: 992px) {
+    @include pad() {
         max-width: 450px;
 
         .container {
@@ -369,7 +360,7 @@
         }
     }
 
-    @media (max-width: 767px) {
+    @include mobile() {
         max-width: 100%;
         margin: 0 15px;
     }
@@ -390,17 +381,17 @@
     height: 54px;
     display: block;
     margin: 0 auto;
-    background-color: #AA0601;
+    background-color: $medium-red;
     color: white;
     font-size: 22px;
 
-    @media (max-width: 992px) {
+    @include pad() {
         width: 210px;
         height: 40px;
         font-size: 14px;
     }
 
-    @media (max-width: 767px) {
+    @include mobile() {
         width: 165px;
         height: 36px;
     }

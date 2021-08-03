@@ -74,13 +74,15 @@
 
 .footermenu {
 	margin-bottom: 36px;
-
+	
 	a {
 		color: white;
 		text-decoration: none;
 		margin-right: 48px;
 		font-size: 16px;
-		line-height: 1.5;
+		&:hover{
+			background-color: #ff5100;
+		}
 	}
 
 	@include pad() {
