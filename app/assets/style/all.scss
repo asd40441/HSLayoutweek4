@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:ital,wght@0,400;1,900&display=swap');
 
-@import '_reset';
-@import '_base';
+@import './setting/_reset';
+@import './setting/_mixin';
+@import './setting/_base';
+@import './setting/_utilities';
 @import './layout/_header';
 @import './layout/_footer';
 @import "./pages/_index";

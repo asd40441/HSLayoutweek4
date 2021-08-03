@@ -1,0 +1,22 @@
+body {
+    font-family: 'Noto Sans TC', 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1110px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-around;
+
+    @include pad() {
+        max-width: 992px;
+        margin: 0 39px;
+    }
+
+    @include mobile() {
+        max-width: 767px;
+        margin: 0 15px;
+    }
+}
