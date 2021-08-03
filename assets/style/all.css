@@ -80,22 +80,6 @@ body {
       max-width: 767px;
       margin: 0 15px; } }
 
-h2 {
-  font-size: 48px;
-  padding-top: 60px;
-  padding-bottom: 40px;
-  text-align: center;
-  color: #650300;
-  font-weight: 700; }
-  @media (max-width: 992px) {
-    h2 {
-      padding-bottom: 32px;
-      font-size: 32px; } }
-  @media (max-width: 767px) {
-    h2 {
-      padding-bottom: 20px;
-      font-size: 24px; } }
-
 .header {
   height: 108px;
   display: -webkit-box;
@@ -308,6 +292,22 @@ h2 {
         .footerfoot ul li {
           margin-left: 0;
           margin-top: 8px; } }
+
+.title {
+  font-size: 48px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  text-align: center;
+  color: #650300;
+  font-weight: 700; }
+  @media (max-width: 992px) {
+    .title {
+      padding-bottom: 32px;
+      font-size: 32px; } }
+  @media (max-width: 767px) {
+    .title {
+      padding-bottom: 20px;
+      font-size: 24px; } }
 
 .banner {
   height: 840px;
