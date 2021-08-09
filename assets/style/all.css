@@ -345,8 +345,7 @@ body {
 .banner {
   height: 840px;
   background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true) center center;
-  background-size: cover;
-  max-width: 100%; }
+  background-size: cover; }
   @media (max-width: 767px) {
     .banner {
       height: 394px; } }
@@ -506,7 +505,11 @@ body {
       position: relative;
       width: 49%;
       font-family: 'Roboto';
-      font-weight: 700; }
+      font-weight: 700;
+      background-color: white;
+      white-space: nowrap; }
+      .design .container .designimg img {
+        opacity: 0.7; }
       .design .container .designimg p {
         color: #AA0601;
         font-size: 72px;
@@ -590,19 +593,19 @@ body {
     margin-bottom: 40px; }
     .contactin .container li {
       width: 100%; }
-    .contactin .container p {
+    .contactin .container label {
       font-size: 16px;
       margin: 4px 0; }
   @media (max-width: 992px) {
     .contactin {
       max-width: 450px; }
+      .contactin p {
+        font-size: 16px; }
       .contactin .container {
         width: 100%;
         margin-left: 0; }
-        .contactin .container p {
-          font-size: 14px; }
-      .contactin p {
-        font-size: 16px; } }
+        .contactin .container label {
+          font-size: 14px; } }
   @media (max-width: 767px) {
     .contactin {
       max-width: 100%;
@@ -611,7 +614,8 @@ body {
 .contactinput {
   width: 100%;
   height: 50px;
-  margin-bottom: 16px; }
+  margin-bottom: 16px;
+  background: transparent; }
 
 .opinion {
   height: 136px; }
@@ -624,6 +628,8 @@ body {
   background-color: #AA0601;
   color: white;
   font-size: 22px; }
+  .contactbtn:hover {
+    background-color: wheat; }
   @media (max-width: 992px) {
     .contactbtn {
       width: 210px;
